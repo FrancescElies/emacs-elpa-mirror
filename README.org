@@ -1,0 +1,4 @@
+* elpa-mirror
+Local Emacs package repository using [[https://github.com/redguardtoo/elpa-mirror][elpa-mirror]]
+* Usage
+`M-x elpamr-create-mirror-for-installed` and push new changes.
