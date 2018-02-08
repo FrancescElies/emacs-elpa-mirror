@@ -4,7 +4,6 @@
 
 ;; Author: steckerhalter
 ;; URL: https://github.com/steckerhalter/emacs-fasd
-;; Package-Version: 20161216.831
 ;; Keywords: cli bash zsh autojump
 
 ;;; Commentary:
@@ -37,6 +36,14 @@
 
 When set to nil, all fasd results are returned for completion"
   :type 'boolean)
+
+
+(defcustom fasd-dired-function 'dired
+   "The DIRENAME function to use for `dired' .
+If set to `dired' it will use the standard `dired' function You
+could use any other `dired' like function. To use e.g. `ranger'
+set it to `deer'"
+   :type 'symbol)
 
 (defcustom fasd-completing-read-function nil
   "The completion function to use for `fasd' completion.
@@ -95,7 +102,7 @@ QUERY can be passed optionally to avoid the prompt."
       (if file
           (if (file-readable-p file)
               (if (file-directory-p file)
-                  (dired file)
+                  (funcall fasd-dired-function file)
                 (find-file file))
             (message "Directory or file `%s' doesn't exist" file))
         (message "Fasd found nothing for query `%s'" query)))))
