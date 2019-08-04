@@ -115,7 +115,6 @@
  (flycheck-rust . [(20190319 1546) ((emacs (24 1)) (flycheck (28)) (dash (2 13 0)) (seq (2 3)) (let-alist (1 0 4))) "Flycheck: Rust additions and Cargo support" tar])
  (flyspell-correct . [(20190408 1010) nil "correcting words with flyspell via custom interface" tar])
  (flyspell-correct-helm . [(20181205 1932) ((flyspell-correct (0 5 0)) (helm (1 9 0))) "correcting words with flyspell via helm interface" tar])
- (font-lock+ . [(20180101 2039) nil "Enhancements to standard library `font-lock.el'." tar])
  (fringe-helper . [(20140620 2109) nil "helper functions for fringe bitmaps" tar])
  (fuzzy . [(20150730 337) nil "Fuzzy Matching" tar])
  (gh-md . [(20151207 1740) ((emacs (24))) "Render markdown using the Github api" tar])
@@ -309,4 +308,5 @@
  (yapfify . [(20180830 733) nil "(automatically) format python buffers using YAPF." tar])
  (yasnippet . [(20190724 1204) ((cl-lib (0 5))) "Yet another snippet extension for Emacs" tar])
  (yasnippet-snippets . [(20190725 1049) ((yasnippet (0 8 0))) "Collection of yasnippet snippets" tar])
+ (font-lock+ . [(20180101 2039) nil "Enhancements to standard library `font-lock.el'." tar])
 )
